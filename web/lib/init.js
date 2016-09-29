@@ -18,6 +18,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 module.exports = function(app){
+
+	var dir = __dirname.replace('lib', '');
+
 	/**
 	 * 路由视图设置
 	 */
@@ -32,6 +35,6 @@ module.exports = function(app){
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({ extended: false }));
 	app.use(cookieParser());
-	app.use(express.static(path.join(__dirname, 'public')));
+	app.use(express.static(path.join(dir, 'public')));
 
 }

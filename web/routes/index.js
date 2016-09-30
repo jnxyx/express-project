@@ -5,14 +5,19 @@ var initHeader = require('./initHeader');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	
-	initHeader(res);
 
-    res.render('home/index.html', { title: 'Express' }, function(err, str) {
+    initHeader(res);
+
+    var renderData = {
+        title: 'Express',
+        version: 'ab402'
+    };
+
+    res.render('home/index.html', renderData, function(err, str) {
         if (err) {
             return req.next(err);
         }
-        
+
         res.send(str);
     });
 });

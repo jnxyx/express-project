@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
         version: 'ab402'
     };
 
-    res.render('users/index.html', { title: 'Express' });
+    res.render('users/index.html', renderData);
 });
 
 module.exports = router;

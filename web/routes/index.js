@@ -1,15 +1,18 @@
 var express = require('express');
 var router = express.Router();
 
+var initHeader = require('./initHeader');
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
+	
+	initHeader(res);
+
     res.render('home/index.html', { title: 'Express' }, function(err, str) {
         if (err) {
             return req.next(err);
         }
-        res._headerNames["Server"] = "Server";
-        res._headers["Server"] = "SB Server.NT";
-        res._headers["x-powered-by"] = "JN-xyx";
+        
         res.send(str);
     });
 });

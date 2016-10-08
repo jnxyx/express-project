@@ -18,6 +18,7 @@ router.get('/', function(req, res, next) {
             return req.next(err);
         }
 
+        // here you can do something to change html string
         res.send(str);
     });
 });

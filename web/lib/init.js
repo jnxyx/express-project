@@ -40,7 +40,7 @@ module.exports = function(app) {
     /**
      * 异常处理
      */
-    app.set('env','developments');
+    app.set('env','development');
     handleError.call(app);
 
 }
@@ -57,7 +57,7 @@ function handleError() {
     if (app.get('env') === 'development') {
         app.use(function(err, req, res, next) {
             res.status(err.status || 500);
-            res.render('error', {
+            res.render('error.html', {
                 message: err.message,
                 error: err
             });
@@ -65,7 +65,7 @@ function handleError() {
     }else{
         app.use(function(err, req, res, next) {
             res.status(err.status || 500);
-            res.render('error', {
+            res.render('error.html', {
                 message: '): 错误请求！',
                 error: {}
             });

@@ -1,16 +1,31 @@
 function initPage() {
     $('#container').html('2014');
 
-    var random, oldHtml;
+    getName();
 
-    setInterval(function() {
+    function getName() {
+        $.ajax({
+            url: '/users/getName',
+            type: 'post',
+            dataType: 'json',
+            success: function(result) {
+                $('#container').html(result.name);
+            }
+        })
+    }
 
-        random = parseInt(10 * Math.random());
-        oldHtml = $('#container').html();
+    function loopR() {
+        var random, oldHtml;
 
-        $('#container').html(oldHtml + random);
+        setInterval(function() {
 
-    }, 200);
+            random = parseInt(10 * Math.random());
+            oldHtml = $('#container').html();
+
+            $('#container').html(oldHtml + random);
+
+        }, 200);
+    }
 }
 
-//window.onload = initPage;
+window.onload = initPage;

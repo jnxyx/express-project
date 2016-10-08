@@ -40,7 +40,7 @@ module.exports = function(app) {
     /**
      * 异常处理
      */
-    // app.set('env','development');
+    app.set('env','developments');
     handleError.call(app);
 
 }
@@ -62,14 +62,22 @@ function handleError() {
                 error: err
             });
         });
+    }else{
+        app.use(function(err, req, res, next) {
+            res.status(err.status || 500);
+            res.render('error', {
+                message: '): 错误请求！',
+                error: {}
+            });
+        });
     }
 
-    app.use(function(err, req, res, next) {
-        res.status(err.status || 500);
-        res.render('error', {
-            message: err.message,
-            error: {}
-        });
-    });
+    // app.use(function(err, req, res, next) {
+    //     res.status(err.status || 500);
+    //     res.render('error', {
+    //         message: err.message,
+    //         error: {}
+    //     });
+    // });
 
 }

@@ -1,12 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-var initHeader = require('./initHeader');
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
-
-    initHeader(res);
 
     var renderData = {
         title: 'Express',

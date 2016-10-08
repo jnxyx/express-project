@@ -6,3 +6,15 @@
 ul li{
 	list-style: none;
 }
+
+#wordCon{
+	display: none;
+}
+
+#container{
+	display: block;
+	width: 1000px;
+	margin: 0 auto;
+	text-align: right;
+	overflow: hidden;
+}

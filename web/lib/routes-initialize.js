@@ -17,7 +17,7 @@ function resetHeader(routes) {
     return function(req, res, next) {
 
         res._headerNames["Server"] = "Server";
-        res._headers["Server"] = "SB Server.NT";
+        res._headers["Server"] = "JN Server.NT";
         res._headers["x-powered-by"] = "JN-xyx";
 
         routes(req, res, next);

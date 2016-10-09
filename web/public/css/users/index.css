@@ -1,20 +1,31 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-ul li{
-	list-style: none;
+body{
+	font-family: 'Open Sans',Arial,sans-serif;
 }
 
-#wordCon{
-	display: none;
+ol li,
+ul li {
+    list-style: none;
+    counter-increment: linenumber;
 }
 
-#container{
-	display: block;
-	width: 1000px;
-	margin: 0 auto;
-	text-align: right;
-	overflow: hidden;
+ol li:before,
+ul li:before {
+    content: counter(linenumber);
+}
+
+#wordCon {
+    display: block;
+}
+
+#container {
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: right;
+    overflow: hidden;
 }

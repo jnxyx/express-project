@@ -66,7 +66,7 @@ function handleError() {
         app.use(function(err, req, res, next) {
             res.status(err.status || 500);
             res.render('error.html', {
-                message: '): 错误请求！',
+                message: ':) 错误请求！',
                 error: {}
             });
         });

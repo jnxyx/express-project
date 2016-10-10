@@ -6,22 +6,21 @@ var index = require('../routes/index');
 var users = require('../routes/users');
 
 function initialize(app) {
-    app.use('/', resetHeader.call(index));
-    app.use('/users', resetHeader.call(users));
-}
 
-function resetHeader(routes) {
+    app.use(function(req, res, next) {
 
-    var routes = routes || this;
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
+        res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Authorization');
 
-    return function(req, res, next) {
+        res.setHeader('Server', 'JN Server.NT');
+        res.setHeader('x-powered-by', 'JN-xyx');
 
-        res._headerNames["Server"] = "Server";
-        res._headers["Server"] = "JN Server.NT";
-        res._headers["x-powered-by"] = "JN-xyx";
+        next();
+    });
 
-        routes(req, res, next);
-    };
+    app.use('/', index);
+    app.use('/users', users);
 }
 
 module.exports = initialize;

@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
+var word = require('../models/word'); 
+
 /* GET users listing. */
 router.get('/', function(req, res, next) {
 
@@ -19,6 +21,16 @@ router.post('/getName', function(req, res, next) {
     };
 
     res.send(resData);
+});
+
+router.post('/getWords', function(req, res, next) {
+
+
+    word.getAll(function(status,results){
+
+    	res.send(results);
+    })
+
 });
 
 module.exports = router;

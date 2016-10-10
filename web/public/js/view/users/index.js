@@ -5,13 +5,26 @@ function initPage() {
 
     function getName() {
         $.ajax({
-            url: '/users/getName',
+            url: '/users/getWords',
             type: 'post',
             dataType: 'json',
-            success: function(result) {
-                $('#container').html(result.name);
+            success: function(results) {
+                if (results.length) {
+                    renderWord(results);
+                }
             }
         })
+    }
+
+    function renderWord(results) {
+        var html = '';
+
+        for (var i = results.length - 1; i >= 0; i--) {
+            var item = results[i];
+            html += '<li>' + item.word + '</li>';
+        }
+
+        $('#wordContainer').html(html);
     }
 
     function loopR() {

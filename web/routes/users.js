@@ -25,11 +25,9 @@ router.post('/getName', function(req, res, next) {
 
 router.post('/getWords', function(req, res, next) {
 
-
     word.getAll(function(status,results){
-
     	res.send(results);
-    })
+    });
 
 });
 

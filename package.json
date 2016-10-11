@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "mode" : "npm install express-generator -g",
+    "express-generator" : "npm install express-generator -g",
     "creat": "express web"
   },
   "dependencies": {

@@ -8,6 +8,4 @@ var initApp = require('./lib/init');
  */
 initApp(app);
 
-// var agenda_start = require('./lib/agenda')();
-
 module.exports = app;

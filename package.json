@@ -1,12 +1,12 @@
 {
-  "name": "express-project",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "express-generator" : "npm install express-generator -g",
-    "creat": "express web"
-  },
-  "dependencies": {
-    "express": "~4.13.4"
-  }
+    "name": "express-project",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "express-generator": "npm install express-generator -g",
+        "creat": "npm install express-generator -g & express web"
+    },
+    "dependencies": {
+        "express": "~4.13.4"
+    }
 }

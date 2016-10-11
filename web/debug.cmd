@@ -1,1 +1,1 @@
-node-debug ./bin/www
+npm run debug

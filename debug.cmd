@@ -1,1 +1,1 @@
-cd web & node-debug ./bin/www
+cd web & npm run debug

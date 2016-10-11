@@ -1,22 +1,23 @@
 {
-  "name": "web",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "npm install & node ./bin/www",
-    "ejs": "npm install ejs --save",
-    "mysql": "npm install mysql --save",
-    "agenda": "npm install agenda --save"
-  },
-  "dependencies": {
-    "body-parser": "~1.15.1",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.2.0",
-    "ejs": "^2.5.2",
-    "express": "~4.13.4",
-    "jade": "~1.11.0",
-    "morgan": "~1.7.0",
-    "mysql": "^2.11.1",
-    "serve-favicon": "~2.3.0"
-  }
+    "name": "web",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "npm install & node app.js",
+        "debug": "node-debug app.js",
+        "ejs": "npm install ejs --save",
+        "mysql": "npm install mysql --save",
+        "agenda": "npm install agenda --save"
+    },
+    "dependencies": {
+        "body-parser": "~1.15.1",
+        "cookie-parser": "~1.4.3",
+        "debug": "~2.2.0",
+        "ejs": "^2.5.2",
+        "express": "~4.13.4",
+        "jade": "~1.11.0",
+        "morgan": "~1.7.0",
+        "mysql": "^2.11.1",
+        "serve-favicon": "~2.3.0"
+    }
 }

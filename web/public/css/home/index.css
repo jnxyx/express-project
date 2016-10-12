@@ -1,21 +1,28 @@
+html {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Microsoft YaHei', "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-nav{
-    width: 100%;
+nav {
     display: inline-block;
     border-bottom: 2px solid #eee;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 nav>ul {
     list-style: none;
-    margin-left: 60px;
+    /*margin-left: 60px;*/
 }
 
 nav>ul>li {
@@ -24,9 +31,19 @@ nav>ul>li {
     cursor: pointer;
     height: 60px;
     line-height: 60px;
+    transition: background-color 1s;
 }
 
 nav>ul>li.active,
 nav>ul>li:hover {
     background-color: #eeeeee;
+}
+
+.cont {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.conb{
+    padding-top: 30px;
 }

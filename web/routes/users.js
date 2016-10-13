@@ -3,7 +3,6 @@ var router = express.Router();
 
 var word = require('../models/word');
 
-/* GET users listing. */
 router.use(function(req, res, next) {
 
     var renderData = {
@@ -14,7 +13,6 @@ router.use(function(req, res, next) {
     next(renderData);
 });
 
-/* GET users listing. */
 router.use(function(renderData, req, res, next) {
 
     renderData = {

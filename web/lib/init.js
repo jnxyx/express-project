@@ -29,7 +29,7 @@ module.exports = function(app) {
     app.use(logger('dev'));
 
     /**
-     * 页面参数解析
+     * 请求参数解析
      */
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: false }));

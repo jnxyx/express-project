@@ -1,3 +1,4 @@
+
 var express = require('express');
 var router = express.Router();
 
@@ -23,7 +24,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/getArticleById', function(req, res, next) {
 
-    var fid = 1;
+    var fid = req.body.fid;//req.param('fid');
     article.getArticleById(fid, function(status, results) {
         res.send(results);
     });

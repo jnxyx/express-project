@@ -1,3 +1,4 @@
+
 /**
  * [初始化]
  * 
@@ -22,20 +23,25 @@ module.exports = function(app) {
     var dir = __dirname.replace('lib', '');
 
     /**
+     * 一般配置
+     */
+    //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+    app.use(logger('dev'));
+
+    /**
+     * 页面参数解析
+     */
+    app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({ extended: false }));
+
+    app.use(cookieParser());
+    app.use(express.static(path.join(dir, 'public')));
+
+    /**
      * 路由视图设置
      */
     initViewEngine(app);
     initRoutes(app);
-
-    /**
-     * 其他配置
-     */
-    //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-    app.use(logger('dev'));
-    app.use(bodyParser.json());
-    app.use(bodyParser.urlencoded({ extended: false }));
-    app.use(cookieParser());
-    app.use(express.static(path.join(dir, 'public')));
 
     /**
      * 异常处理

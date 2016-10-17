@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
+var article = require('../models/article');
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
@@ -17,6 +19,15 @@ router.get('/', function(req, res, next) {
         // here you can do something to change html string
         res.send(str);
     });
+});
+
+router.post('/getArticleById', function(req, res, next) {
+
+    var fid = 1;
+    article.getArticleById(fid, function(status, results) {
+        res.send(results);
+    });
+
 });
 
 module.exports = router;

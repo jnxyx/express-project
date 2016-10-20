@@ -4,7 +4,7 @@
  * 
  */
 
-var initViewEngine = require('./view-engine.js');
+var initViewEngine = require('./engine-initialize.js');
 var initRoutes = require('./routes-initialize.js');
 
 /**

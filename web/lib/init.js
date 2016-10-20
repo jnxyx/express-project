@@ -25,7 +25,7 @@ module.exports = function(app) {
     /**
      * 一般配置
      */
-    //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+    app.use(favicon(path.join(dir, 'public', 'favicon.ico')));
     app.use(logger('dev'));
 
     /**

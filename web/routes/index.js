@@ -4,7 +4,6 @@ var router = express.Router();
 
 var article = require('../models/article');
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
 
     var renderData = {
@@ -17,7 +16,7 @@ router.get('/', function(req, res, next) {
             return req.next(err);
         }
 
-        // here you can do something to change html string
+        // 这里可以处理html字符串
         res.send(str);
     });
 });

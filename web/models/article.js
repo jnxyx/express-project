@@ -1,3 +1,4 @@
+
 var db = require('../lib/database');
 
 exports.getArticleById = function(id, callback) {

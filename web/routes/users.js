@@ -16,6 +16,7 @@ router.use(function(req, res, next) {
 
 router.use(function(renderData, req, res, next) {
 
+    //分路由处理
     renderData = {
         title: 'Xu',
         version: 'ab402'

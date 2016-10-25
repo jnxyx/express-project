@@ -43,6 +43,10 @@ nav>ul>li:hover {
     background-color: #eeeeee;
 }
 
+.banner {
+    border-bottom: 2px solid #eee;
+}
+
 .cont {
     padding-left: 24px;
     padding-right: 24px;
@@ -52,17 +56,28 @@ nav>ul>li:hover {
     padding-top: 30px;
 }
 
+footer {
+    padding-right: 24px;
+    padding-left: 24px;
+    border-top: 2px solid #eee;
+}
+
 .bottom {
     width: 100%;
-    border-top: 2px solid #eee;
     padding-bottom: 40px;
     padding-top: 40px;
 }
 
+.bottom ul {
+    display: block;
+    height: 20px;
+}
+
 .bottom ul li {
     float: left;
-    padding-left: 20px;
     padding-right: 20px;
+    height: 20px;
+    line-height: 20px;
 }
 
 .clear:after {

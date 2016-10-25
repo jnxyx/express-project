@@ -6,7 +6,9 @@ html {
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 body {
@@ -46,11 +48,23 @@ nav>ul>li:hover {
     padding-right: 24px;
 }
 
-.conb{
+.conb {
     padding-top: 30px;
 }
 
-.bottom{
+.bottom {
     width: 100%;
     border-top: 2px solid #eee;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.bottom ul li {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.clear:after {
+    clear: both;
 }

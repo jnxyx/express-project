@@ -49,3 +49,8 @@ nav>ul>li:hover {
 .conb{
     padding-top: 30px;
 }
+
+.bottom{
+    width: 100%;
+    border-top: 2px solid #eee;
+}

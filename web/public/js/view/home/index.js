@@ -1,4 +1,8 @@
 function initPage() {
+    // getContentTest();
+}
+
+function getContentTest(){
     $.ajax({
         url: '/getArticleById',
         type: 'post',
@@ -9,7 +13,7 @@ function initPage() {
         success: function(results) {
             $('.conb').html(results.content);
         }
-    })
+    });
 }
 
 window.onload = initPage; // $(initPage);

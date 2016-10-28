@@ -1,44 +1,46 @@
-function initPage() {
-    $('#container').html('2014');
+(function($) {
 
-    getName();
+    $(function() {
+        
+        $('#container').html('2014');
 
-    function getName() {
-        $.ajax({
-            url: '/users/getWords',
-            type: 'post',
-            dataType: 'json',
-            success: function(results) {
-                if (results.length) {
-                    renderWord(results);
+        getName();
+
+        function getName() {
+            $.ajax({
+                url: '/users/getWords',
+                type: 'post',
+                dataType: 'json',
+                success: function(results) {
+                    if (results.length) {
+                        renderWord(results);
+                    }
                 }
-            }
-        })
-    }
-
-    function renderWord(results) {
-        var html = '';
-
-        for (var i = results.length - 1; i >= 0; i--) {
-            var item = results[i];
-            html += '<li>' + item.word + '</li>';
+            })
         }
 
-        $('#wordContainer').html(html);
-    }
+        function renderWord(results) {
+            var html = '';
 
-    function loopR() {
-        var random, oldHtml;
+            for (var i = results.length - 1; i >= 0; i--) {
+                var item = results[i];
+                html += '<li>' + item.word + '</li>';
+            }
 
-        setInterval(function() {
+            $('#wordContainer').html(html);
+        }
 
-            random = parseInt(10 * Math.random());
-            oldHtml = $('#container').html();
+        function loopR() {
+            var random, oldHtml;
 
-            $('#container').html(oldHtml + random);
+            setInterval(function() {
 
-        }, 200);
-    }
-}
+                random = parseInt(10 * Math.random());
+                oldHtml = $('#container').html();
 
-window.onload = initPage;
+                $('#container').html(oldHtml + random);
+
+            }, 200);
+        }
+    });
+})(jQuery);

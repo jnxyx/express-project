@@ -13,15 +13,12 @@ html {
 
 body {
     font-family: 'Microsoft YaHei', "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-header{
-    display: inline-flex;
+    min-width: 1280px;
 }
 
 nav {
     display: inline-block;
-    border-bottom: 2px solid #eee;
+    border-bottom: 1px solid #eee;
     text-align: center;
     padding-left: 24px;
     padding-right: 24px;
@@ -48,7 +45,7 @@ nav>ul>li:hover {
 }
 
 .banner {
-    border-bottom: 2px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 .banner_container{
@@ -62,12 +59,16 @@ nav>ul>li:hover {
 
 .conb {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
+
+
+
 
 footer {
     padding-right: 24px;
     padding-left: 24px;
-    border-top: 2px solid #eee;
+    border-top: 1px solid #eee;
 }
 
 .bottom {

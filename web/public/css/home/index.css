@@ -15,6 +15,10 @@ body {
     font-family: 'Microsoft YaHei', "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+header{
+    display: inline-flex;
+}
+
 nav {
     display: inline-block;
     border-bottom: 2px solid #eee;
@@ -45,6 +49,10 @@ nav>ul>li:hover {
 
 .banner {
     border-bottom: 2px solid #eee;
+}
+
+.banner_container{
+    height: 240px;
 }
 
 .cont {

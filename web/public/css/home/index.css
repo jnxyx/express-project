@@ -60,7 +60,13 @@ nav>ul>li:hover {
 .conb {
     padding-top: 30px;
     padding-bottom: 30px;
-    overflow:auto;
+    overflow: auto;
+}
+
+.cont_title {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px auto;
 }
 
 .conb>ul {
@@ -68,10 +74,14 @@ nav>ul>li:hover {
     text-align: center;
 }
 
-.article_list {
-    width: 400px;
+.conb>ul>li {
+    width: 380px;
     display: inline-block;
     text-align: left;
+    margin-left: 8px;
+    margin-right: 8px;
+    border: 1px solid #eeeeee;
+    padding:5px 10px;
 }
 
 

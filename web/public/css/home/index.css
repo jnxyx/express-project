@@ -62,9 +62,12 @@ nav>ul>li:hover {
     padding-bottom: 30px;
 }
 
+.article_list{
+    width: 400px;
+    float: left;
+}
 
-
-
+/**  -- 页脚 start --  **/
 footer {
     padding-right: 24px;
     padding-left: 24px;
@@ -92,3 +95,4 @@ footer {
 .clear:after {
     clear: both;
 }
+/**  -- 页脚 end --  **/

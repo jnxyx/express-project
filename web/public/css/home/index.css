@@ -50,6 +50,7 @@ nav>ul>li:hover {
 
 .banner_container {
     height: 240px;
+    text-align: center;
 }
 
 .cont {
@@ -81,7 +82,25 @@ nav>ul>li:hover {
     margin-left: 8px;
     margin-right: 8px;
     border: 1px solid #eeeeee;
-    padding:5px 10px;
+    padding: 5px 10px;
+}
+
+.art_list_title {
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.article_list li {
+    padding: 5px 10px;
+}
+
+.article_list li a {
+    color: #333333;
+}
+
+.article_list li a:hover {
+    text-decoration: underline;
 }
 
 
@@ -109,6 +128,14 @@ footer {
     padding-right: 20px;
     height: 20px;
     line-height: 20px;
+}
+
+.bottom ul li a {
+    color: #333333;
+}
+
+.bottom ul li a:hover {
+    text-decoration: underline;
 }
 
 .clear:after {

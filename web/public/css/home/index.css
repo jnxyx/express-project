@@ -48,7 +48,7 @@ nav>ul>li:hover {
     border-bottom: 1px solid #eee;
 }
 
-.banner_container{
+.banner_container {
     height: 240px;
 }
 
@@ -60,14 +60,23 @@ nav>ul>li:hover {
 .conb {
     padding-top: 30px;
     padding-bottom: 30px;
+    overflow:auto;
 }
 
-.article_list{
-    width: 400px;
-    float: left;
+.conb>ul {
+    display: block;
+    text-align: center;
 }
+
+.article_list {
+    width: 400px;
+    display: inline-block;
+    text-align: left;
+}
+
 
 /**  -- 页脚 start --  **/
+
 footer {
     padding-right: 24px;
     padding-left: 24px;
@@ -95,4 +104,6 @@ footer {
 .clear:after {
     clear: both;
 }
+
+
 /**  -- 页脚 end --  **/

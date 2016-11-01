@@ -68,6 +68,8 @@ nav>ul>li:hover {
     text-align: center;
     font-size: 24px;
     margin: 20px auto;
+    width: 300px;
+    border-bottom: 2px solid #333333;
 }
 
 .conb>ul {

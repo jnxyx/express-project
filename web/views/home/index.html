@@ -38,13 +38,16 @@
                             <% var _item = item._sort[j] %>
                             <li>
                                 <div class="article_list">
-                                    <h4 class="art_list_title">Job-M</h4>
+                                    <h4 class="art_list_title"><% = _item.title %></h4>
                                     <ul>
-                                        <li><a href="#">空间百科我饿哦人围殴惹我肉</a></li>
-                                        <li><a href="#">空间百科我饿哦人围殴惹我肉</a></li>
-                                        <li><a href="#">空间百科我饿哦人围殴惹我肉</a></li>
-                                        <li><a href="#">空间百科我饿哦人围殴惹我肉</a></li>
-                                        <li><a href="#">空间百科我饿哦人围殴惹我肉</a></li>
+                                        <% for(var j = 0; j < _item.article.length; j++ ) { %>
+                                            <% var article = _item.article[j] %>
+                                            <li>
+                                                <a href="<% = article.src %>">
+                                                    <% = article.title %>
+                                                </a>
+                                            </li>
+                                        <% } %>
                                     </ul>
                                 </div>
                             </li>

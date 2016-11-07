@@ -28,9 +28,6 @@
         </div>
     </div>
     <div class="cont">
-        <% if(sort.length){ %>
-            
-        <% } %>
         <div class="conb">
             <h3 class="cont_title">Job</h3>
             <ul>

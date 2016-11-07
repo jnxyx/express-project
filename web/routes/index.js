@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var article = require('../models/article');
+var tools = require('../lib/tools');
 
 router.get('/', function(req, res, next) {
 
@@ -27,13 +28,13 @@ router.get('/', function(req, res, next) {
     for (var i = 0; i < 3; i++) {
         var item = {
             title: 'Job',
-            _sort: [template, template, template]
+            _sort: [tools.cloneObject(template), tools.cloneObject(template), tools.cloneObject(template)]
         };
         sortArray.push(item);
     }
 
     renderData.sort = sortArray;
-    
+
     res.render('home/index.html', renderData, function(err, str) {
         if (err) {
             return req.next(err);

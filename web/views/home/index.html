@@ -32,19 +32,19 @@
             <% for(var i = 0; i < sort.length; i++ ) { %>
                 <% var item = sort[i] %>
                 <div class="conb">
-                    <h3 class="cont_title"><% = item.title %></h3>
+                    <h3 class="cont_title"><%= item.title %></h3>
                     <ul>
                         <% for(var j = 0; j < item._sort.length; j++ ) { %>
                             <% var _item = item._sort[j] %>
                             <li>
                                 <div class="article_list">
-                                    <h4 class="art_list_title"><% = _item.title %></h4>
+                                    <h4 class="art_list_title"><%= _item.title %></h4>
                                     <ul>
-                                        <% for(var j = 0; j < _item.article.length; j++ ) { %>
-                                            <% var article = _item.article[j] %>
+                                        <% for(var k = 0; k < _item.article.length; k++ ) { %>
+                                            <% var article = _item.article[k] %>
                                             <li>
-                                                <a href="<% = article.src %>">
-                                                    <% = article.title %>
+                                                <a href="<%= article.src %>">
+                                                    <%= article.title %>
                                                 </a>
                                             </li>
                                         <% } %>

@@ -53,6 +53,11 @@ nav>ul>li:hover {
     text-align: center;
 }
 
+.banner_container img {
+    width: 100%;
+    height: 100%;
+}
+
 .cont {
     padding-left: 24px;
     padding-right: 24px;

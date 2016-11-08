@@ -16,6 +16,10 @@ body {
     min-width: 1280px;
 }
 
+header {
+    height: 61px;
+}
+
 nav {
     display: inline-block;
     border-bottom: 1px solid #eee;

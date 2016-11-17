@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-10-17 10:58:44
+Date: 2016-11-17 15:20:32
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -39,7 +39,7 @@ CREATE TABLE `word` (
   `word` varchar(255) NOT NULL DEFAULT '' COMMENT '词语',
   `addtime` datetime NOT NULL COMMENT '添加时间',
   PRIMARY KEY (`wid`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of word
@@ -52,3 +52,5 @@ INSERT INTO `word` VALUES ('5', '唯有知情一片月, 曾窥飞鸟入昭阳', 
 INSERT INTO `word` VALUES ('6', '明犯强汉者, 虽远必诛', '2016-10-10 15:02:01');
 INSERT INTO `word` VALUES ('7', '帝高阳之苗裔兮, 正皇考曰伯庸', '2016-10-10 15:02:09');
 INSERT INTO `word` VALUES ('8', '皇览揆余初度兮, 肇锡余以嘉名', '2016-10-10 15:02:12');
+INSERT INTO `word` VALUES ('9', '夫君子之行,静以修身,俭以养德。非淡泊无以明志，非宁静无以致远。', '2016-10-17 13:37:14');
+INSERT INTO `word` VALUES ('10', 'test', '2016-11-17 15:20:10');

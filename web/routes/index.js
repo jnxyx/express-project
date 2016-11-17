@@ -16,18 +16,18 @@ router.get('/', function(req, res, next) {
     var template = {
         title: 'Job-M',
         article: [
-            { src: '#', title: '空间百科我饿哦人围殴惹我肉' }, 
-            { src: '#', title: '空间百科我饿哦人围殴惹我肉' }, 
-            { src: '#', title: '空间百科我饿哦人围殴惹我肉' }, 
-            { src: '#', title: '空间百科我饿哦人围殴惹我肉' }, 
-            { src: '#', title: '空间百科我饿哦人围殴惹我肉' }, 
+            { src: '#', title: '空间百科我饿哦人围殴惹我肉' },
+            { src: '#', title: '空间百科我饿哦人围殴惹我肉' },
+            { src: '#', title: '空间百科我饿哦人围殴惹我肉' },
+            { src: '#', title: '空间百科我饿哦人围殴惹我肉' },
+            { src: '#', title: '空间百科我饿哦人围殴惹我肉' },
             { src: '#', title: '空间百科我饿哦人围殴惹我肉' }
         ]
     };
 
     for (var i = 0; i < 3; i++) {
         var item = {
-            title: 'Job',
+            title: 'Job-' + i,
             _sort: [tools.cloneObject(template), tools.cloneObject(template), tools.cloneObject(template)]
         };
         sortArray.push(item);

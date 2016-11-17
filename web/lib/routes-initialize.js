@@ -3,7 +3,7 @@
  * [路由配置]
  * 
  */
-var index = require('../routes/index');
+var home = require('../routes/home');
 var users = require('../routes/users');
 
 function initialize(app) {
@@ -20,7 +20,7 @@ function initialize(app) {
         next();
     });
 
-    app.use('/', index);
+    app.use('/', home);
     app.use('/users', users);
 }
 

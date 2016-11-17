@@ -3,7 +3,15 @@
  * [路由配置]
  * 
  */
+var about = require('../routes/about');
+var account = require('../routes/account');
+var amazing = require('../routes/amazing');
+var community = require('../routes/community');
+var game = require('../routes/game');
+var help = require('../routes/help');
 var home = require('../routes/home');
+var interest = require('../routes/interest');
+var job = require('../routes/job');
 var users = require('../routes/users');
 
 function initialize(app) {
@@ -21,6 +29,16 @@ function initialize(app) {
     });
 
     app.use('/', home);
+
+    
+    app.use('/about', about);
+    app.use('/account', account);
+    app.use('/amazing', amazing);
+    app.use('/community', community);
+    app.use('/game', game);
+    app.use('/help', help);
+    app.use('/interest', interest);
+    app.use('/job', job);
     app.use('/users', users);
 }
 

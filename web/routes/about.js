@@ -20,3 +20,5 @@ router.use(function(renderData, req, res, next) {
         next();
     }
 });
+
+module.exports = router;

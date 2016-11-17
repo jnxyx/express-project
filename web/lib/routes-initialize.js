@@ -12,6 +12,7 @@ var help = require('../routes/help');
 var home = require('../routes/home');
 var interest = require('../routes/interest');
 var job = require('../routes/job');
+var math = require('../routes/math');
 var users = require('../routes/users');
 
 function initialize(app) {
@@ -39,6 +40,7 @@ function initialize(app) {
     app.use('/help', help);
     app.use('/interest', interest);
     app.use('/job', job);
+    app.use('/math', math);
     app.use('/users', users);
 }
 

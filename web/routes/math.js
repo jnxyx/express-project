@@ -15,7 +15,7 @@ router.use(function(req, res, next) {
 router.use(function(renderData, req, res, next) {
 
     if (req.url === '/' || req.url === '') {
-        res.render('job/index.html', renderData);
+        res.render('math/index.html', renderData);
     } else {
         next();
     }

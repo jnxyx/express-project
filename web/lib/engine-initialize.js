@@ -6,6 +6,10 @@
 var path = require('path');
 var ejs = require('ejs');
 
+// 自定义标识
+// ejs.open = '{{';
+// ejs.close = '}}';
+
 module.exports = function(app) {
 
     var dir = __dirname.replace('lib', '');

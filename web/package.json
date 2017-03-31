@@ -10,7 +10,7 @@
         "agenda": "npm install agenda --save"
     },
     "dependencies": {
-        // "node-inspector": "1.0.x"
+        "node-inspector": "1.0.x",
         "body-parser": "~1.15.1",
         "cookie-parser": "~1.4.3",
         "debug": "~2.2.0",

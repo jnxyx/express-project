@@ -1,1 +1,2 @@
-npm run debug
+rem npm run debug
+node-debug app.js

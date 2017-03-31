@@ -23,7 +23,7 @@ function initialize(app) {
         res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
         res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Authorization');
 
-        res.setHeader('Server', 'JN Server.NT');
+        res.setHeader('Server', 'xuyunxiang JN Server.NT');
         res.setHeader('x-powered-by', 'JN-xyx');
 
         next();

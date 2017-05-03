@@ -17,11 +17,11 @@ router.get('/', function(req, res, next) {
         title: 'Job-M',
         article: [
             { src: '#', title: '空间百科我饿哦人围殴惹我肉' },
-            { src: '#', title: '空间百科我饿哦人围殴惹我肉' },
-            { src: '#', title: '空间百科我饿哦人围殴惹我肉' },
-            { src: '#', title: '空间百科我饿哦人围殴惹我肉' },
-            { src: '#', title: '空间百科我饿哦人围殴惹我肉' },
-            { src: '#', title: '空间百科我饿哦人围殴惹我肉' }
+            { src: '#', title: '空间百科我饿哦人围殴' },
+            { src: '#', title: '空间百科我饿哦人围殴惹我' },
+            { src: '#', title: '空间百科我饿' },
+            { src: '#', title: '空间百科我饿哦人' },
+            { src: '#', title: '空间百科我饿哦人围殴惹我肉我肉' }
         ]
     };
 
